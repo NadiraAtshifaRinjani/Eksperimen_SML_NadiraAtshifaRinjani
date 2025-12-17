@@ -29,5 +29,5 @@ jobs:
       - name: Upload preprocessed data
         uses: actions/upload-artifact@v4
         with:
-          name: preprocessed-dataset
+          name: dataset_raw/datarumah.csv
           path: preprocessing/datasetrumah_preprocessing/
