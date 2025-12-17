@@ -10,7 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -26,8 +27,8 @@ jobs:
         run: |
           python preprocessing/automate_NadiraAtshifaRinjani.py
 
-      - name: Upload preprocessed data
+      - name: Upload preprocessed dataset
         uses: actions/upload-artifact@v4
         with:
-          name: dataset_raw/datarumah.csv
-          path: preprocessing/datasetrumah_preprocessing/
+          name: preprocessed-dataset
+          path: preprocessing/datasetumah_preprocessing/
