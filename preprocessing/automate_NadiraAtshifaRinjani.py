@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
+import os
 
 def load_data(path):
     return pd.read_csv(path)
@@ -51,13 +52,16 @@ def preprocess_pipeline(input_path, output_path):
     df = transform_features(df)
     df = encode_features(df)
     df = scale_features(df)
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
     df.to_csv(output_path, index=False)
-    print("Preprocessing selesai ✅")
     return df
+
 
 if __name__ == "__main__":
    preprocess_pipeline(
     "dataset_raw/datarumah.csv",
     "preprocessing/datasetumah_preprocessing/data_preprocessed.csv"
 )
+
 
