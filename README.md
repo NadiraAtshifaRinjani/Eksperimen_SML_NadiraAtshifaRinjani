@@ -9,9 +9,11 @@ Proyek ini mencakup proses eksplorasi data, preprocessing manual melalui noteboo
 Eksperimen_SML_NadiraAtshifaRinjani
 
 ├── .github/workflows
-│ └── preprocessing.yml
+│ 
+└── preprocessing.yml
 ├── dataset_raw
-│ └── datarumah.csv
+│ 
+└── datarumah.csv
 ├── preprocessing
 │ ├── Eksperimen_Nadira_Atshifa_Rinjani.ipynb
 │ ├── automate_NadiraAtshifaRinjani.py
