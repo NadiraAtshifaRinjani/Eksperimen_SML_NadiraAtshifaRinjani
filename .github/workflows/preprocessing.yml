@@ -31,4 +31,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: preprocessed-dataset
-          path: preprocessing/datasetumah_preprocessing/
+          path: preprocessing/datasetrumah_preprocessing/
