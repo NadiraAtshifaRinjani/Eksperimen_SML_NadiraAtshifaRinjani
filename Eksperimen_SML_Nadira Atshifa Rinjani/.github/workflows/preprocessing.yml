@@ -25,10 +25,10 @@ jobs:
 
       - name: Run preprocessing script
         run: |
-          python Eksperimen_SML_Nadira Atshifa Rinjani/preprocessing/automate_NadiraAtshifaRinjani.py
+          python Eksperimen_SML_NadiraAtshifaRinjani/preprocessing/automate_NadiraAtshifaRinjani.py
 
       - name: Upload preprocessed dataset
         uses: actions/upload-artifact@v4
         with:
           name: preprocessed-dataset
-          path: Eksperimen_SML_Nadira Atshifa Rinjani/preprocessing/datasetrumah_preprocessing/
+          path: Eksperimen_SML_NadiraAtshifaRinjani/preprocessing/datasetrumah_preprocessing/
