@@ -61,7 +61,8 @@ def preprocess_pipeline(input_path, output_path):
 if __name__ == "__main__":
    preprocess_pipeline(
     "dataset_raw/datarumah.csv",
-    "preprocessing/datasetumah_preprocessing/data_preprocessed.csv"
+    "preprocessing/datasetrumah_preprocessing/data_preprocessed.csv"
 )
+
 
 
